@@ -51,12 +51,14 @@
         #learn{
             margin-right: 10%;
         }
-        li>a{
-            color:coral;
-        }
-        
-        li>a:hover{
-            color:coral;
+        .link{
+        	font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold;
+            font-size: 10em;
+            color:orange;
+        	}
+        a.link:hover{
+        	color:coral;
         }
         .jumbotron{
             background-color: rgba(18, 18, 18, 0.8);
@@ -100,10 +102,10 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li>
-                    <a href="#">Home</a></li>
+                    <a class="link" href="#">home</a></li>
                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+                    <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">events<span class="caret"></span></a>
                     
                     <ul class="dropdown-menu">
                         <li><a href="#">Children For Change</a></li>
@@ -111,10 +113,10 @@
                         <li><a href="#">Maker's Mela</a></li>
                     </ul> </li>
 
-                <li><a href="sponsor.html">Sponsorships</a></li>
+                <li><a class="link" href="sponsor.html">sponsorships</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+                    <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-user"> Members </a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-time"> History </a></li>
@@ -122,7 +124,7 @@
                     </ul>
                 </li>
 
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="link" href="contact.html">contact Us</a></li>
                 
             </ul>
         </div><!-- /.navbar-collapse -->
