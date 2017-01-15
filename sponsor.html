@@ -18,9 +18,11 @@
         
         @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
         
-        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
         
         @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+        
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
         
         #jumbo{
             height:100vh;
@@ -53,31 +55,30 @@
         }
         
         .jumbotron{
-            background-color: rgb(40, 40, 40);
+            background-color: rgb(80, 80, 80);
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
             color: white;
-
-            
         }
         
         #hello{
             height:50vh;
             margin-bottom: 0;
-            color:orange;
+            color:aliceblue;
             font-family: 'Nunito Sans', sans-serif;
             z-index: 1;
             width: 100vw;
             overflow:hidden;
-            background-color: rgba(51,51,51,0.8);
+            background-color: rgba(120,120,120,0.8);
         }
         
         #content{
-        	background-color: rgb(40,40,40);
+        	background-color: rgb(80,80,80);
         }
         
-        h1{
-            font-family: 'Quicksand', sans-serif;
+        h1, h2{
+            font-family: 'Montserrat', sans-serif;
+            "font-size:48"
         }
         
         #cont{
@@ -141,6 +142,10 @@
             font-weight: 200;
             color: black!important; 
         }
+        
+        #why{
+            margin-bottom: 0;
+        }
     </style>
 
   </head>
@@ -198,14 +203,16 @@
     <div id="hello" class="jumbotron">
         <div style="text-align:center;" class="container">
             <p style="height:10vh;"></p>
-            <h1>sponsorship</h1>
+            <h1>Sponsor us!</h1>
             <p>Help us out by funding us.</p>
+                <a href="https://www.ketto.org/FRC2017-6024"><button type="button" class="btn btn-danger">Donate</button></a>
+                <a href="contact.html"><button type="button" class="btn btn-warning">Sponsor</button></a>
         </div>
     </div>
     
     <div class="jumbotron" id="why">
         <div style="text-align:center;" class="container">
-            <h1 style="font-size:48">Why sponsor us?</h1>
+            <h1>Why sponsor us?</h1>
             <p style="min-height:30vh;">We are seeking financial aid from individuals and companies who believe that engagement in STEM activities such as robotics, science, math competitions, and hands-on experiences will encourage a deeper understanding in students. Without our generous sponsors, we would not have the opportunity to get the most out of this wonderful program. The funds and other assistance provided by people like you help our team purchase the tools and parts we need to build our robots, enter competitions, and, of course, order pizza during build season.</p>
         </div>
     </div>
@@ -225,15 +232,15 @@
                         <p>Infosys is a global leader in technology services and consulting. They enable clients in more than 50 countries to create and execute strategies for their digital transformation. From engineering to application development, knowledge management and business process management, Infosys helps their clients find the right problems to solve, and to solve these effectively. Our team of 199,000+ innovators, across the globe, is differentiated by the imagination, knowledge and experience, across industries and technologies, that they bring to every project they undertake.</p>
                         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                     </div>
-                    
+                    <!--
                     <div class="jumbotron" id="gionee">
                         <img src="img/gionee.jpg" height="200px;">
                         <h2>Gionee</h2>
                         <p>...</p>
                         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-                    </div>
+                    </div>-->
                 </div>
-                
+                <!--
                 <div class="col-xs-6 col-md-3">
                     <a href="http://www.infosys.com" class="thumbnail">
                         <img src="img/infosys.png" style="height:250px;" alt="...">
@@ -280,8 +287,7 @@
                     <a href="http://www.britannia.co.in" class="thumbnail">
                       <img src="img/britannia.jpeg" style="height:250px;" alt="...">
                     </a>
-                </div>
-            
+                </div>-->
             </div>
             
         </div>

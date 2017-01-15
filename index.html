@@ -18,21 +18,13 @@
         
         @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
         
-        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
         
         @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
         
-        #jumbo{
-            height:100vh;
-            margin-bottom: 0;
-            color:orange;
-            font-family: 'Nunito Sans', sans-serif;
-            z-index: 1;
-            width: 100vw;
-            overflow:hidden;
-        }
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
         
-        .navbar-brand, .navbar-nav li a{
+        .navbar-brand, .navbar-nav li a {
             line-height: 60px;
             height: 60px;
             padding-top: 0;
@@ -48,10 +40,6 @@
             margin-bottom: 0;
         }
         
-        #learn{
-            margin-right: 10%;
-        }
-        
         .jumbotron{
             background-color: rgb(40, 40, 40);
             font-family: 'Raleway', sans-serif;
@@ -64,20 +52,21 @@
         #hello{
             height:100vh;
             margin-bottom: 0;
-            color:orange;
+            color:#f0fbff;
             font-family: 'Nunito Sans', sans-serif;
             z-index: 1;
             width: 100vw;
             overflow:hidden;
-            background-color: rgba(51,51,51,0.8);
-        }
+            background-color: rgba(51, 51, 51, 0.8);
+            }
         
         #content{
         	background-color: rgb(40,40,40);
         }
         
         h1{
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            color: aliceblue;
         }
         
         #cont{
@@ -119,7 +108,6 @@
         
         #sponsors{
             background-color: rgb(30, 30, 30);
-            color: aliceblue;
             margin-bottom: 0;
             padding-bottom: 5vh;
         }
@@ -133,7 +121,7 @@
         }
         
         ul.nav a { 
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             font-weight: 200;
             color: aliceblue!important; 
         }
@@ -143,11 +131,14 @@
         }
         
         ul.nav ul a { 
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             font-weight: 200;
             color: black!important; 
         }
-	
+        
+        #more:hover{
+            color: coral !important;
+        }
 
     </style>
 
@@ -210,15 +201,15 @@
     <div id="hello" class="jumbotron">
         <div style="text-align:center;" class="container">
             <p style="height:30vh;"></p>
-            <h1>hello.</h1>
-            <p>We are 6024</p>
+            <h1 id="welcome">hello.</h1>
+            <p id="6024">We are team 6024</p>
             <span id="more" class="glyphicon glyphicon-triangle-bottom" style="font-size: 64px; margin-top: 33vh;" aria-hidden="true"></span>
         </div>
     </div>
     
     <div class="jumbotron" id="intro">
         <div style="text-align:center;" class="container">
-            <h1>We are Team R-Factor</h1>
+            <h1>We are team R-Factor</h1>
             <p style="min-height:30vh;">We are a team of 23 young enthusiastic robotics students from Mumbai, India. Many of us have been working with LEGO® robots, World Robot Olympiads, and the FIRST® programs since 2009. We’ve represented the country at several international events, tallying a total of 43 international selections amongst us. Our participation in national and international competitions has helped us grow into innovators and leaders. It has imparted to us important virtues like patience and compassion, and has developed and enriched us as individuals and as a team, making us efficient planners and organizers. Team R-Factor was described at the FLL®2013 as the “only team not just about Robotics”, a title we take great pride in.</p>
         </div>
     </div>
@@ -231,32 +222,32 @@
             
             <div class="row" style="text-align: center;">
                 
-                <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3" id="card">
                     <a href="http://www.infosys.com" class="thumbnail">
                         <img src="img/infosys.png" style="height:250px;" alt="...">
                     </a>
                 </div>
             
-                <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3" id="card">
                     <a href="http://www.gionee.co.in" class="thumbnail">
                       <img src="img/gionee.jpg" style="height:250px;" alt="...">
                     </a>
                 </div>
                 
-                <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3" id="card">
                     <a href="http://www.omkar.com" class="thumbnail">
                         <img src="img/omkar.jpg" style="height:250px;" alt="...">
                     </a>
                 </div>
             
-                <div class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-3" id="card">
                     <a href="http://www.britannia.co.in" class="thumbnail">
                       <img src="img/britannia.jpeg" style="height:250px;" alt="...">
                     </a>
                 </div>
             </div>
             
-            <a href="sponsor.html"><span class="glyphicon glyphicon-plus-sign" style="font-size:50px; padding-top:20px; color:white;"></span></a>
+            <a href="sponsor.html"><span class="glyphicon glyphicon-plus-sign" id="more" style="font-size:50px; padding-top:20px; color:white;"></span></a>
             
         </div>
     </div>
