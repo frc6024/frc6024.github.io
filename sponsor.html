@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,143 +7,327 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Team R-Factor | FIRST ROBOTICS COMPETITION</title>
+    <title>Team 6024 | R-Factor</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<style>
-    .navbar-brand, .navbar-nav li a{
-        line-height: 60px;
-        height: 60px;
-        padding-top: 0;
-    }
-    
-    body{
-        padding-top:60px;
-        padding-bottom:60px;
-    }
-    
-    .jumbotron{
-        min-height: 270px;
-    }
-    
-    .navbar{
-        margin-bottom: 0;
-    }
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+        
+        
+        @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
+        
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+        
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+        
+        #jumbo{
+            height:100vh;
+            margin-bottom: 0;
+            color:orange;
+            font-family: 'Nunito Sans', sans-serif;
+            z-index: 1;
+            width: 100vw;
+            overflow:hidden;
+        }
+        
+        .navbar-brand, .navbar-nav li a{
+            line-height: 60px;
+            height: 60px;
+            padding-top: 0;
+        }
 
-</style>
+        body{
+            
+            padding-bottom:0px;
+            background-color: rgb(40, 40, 40);
+        }
+
+        .navbar{
+            margin-bottom: 0;
+        }
+        
+        #learn{
+            margin-right: 10%;
+        }
+        
+        .jumbotron{
+            background-color: rgb(40, 40, 40);
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            color: white;
+
+            
+        }
+        
+        #hello{
+            height:50vh;
+            margin-bottom: 0;
+            color:orange;
+            font-family: 'Nunito Sans', sans-serif;
+            z-index: 1;
+            width: 100vw;
+            overflow:hidden;
+            background-color: rgba(51,51,51,0.8);
+        }
+        
+        #content{
+        	background-color: rgb(40,40,40);
+        }
+        
+        h1{
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        #cont{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        #footer{
+            min-height: 10vh;
+            width: 100vw;
+            background-color: rgb(24, 24, 24);
+            position: absolute;
+            padding-bottom: 5vh;
+        }
+        
+        #copy{
+            width: inherit;
+            padding-left: 0;
+            margin-bottom: 0;
+            color: gainsboro;
+            font-family: Nunito Sans, sans-serif;
+            font-weight: 100;
+        }
+     
+        .link{
+        	font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color:orange;
+        	}
+        
+        #sponsors{
+            background-color: rgb(30, 30, 30);
+            margin-bottom: 0;
+            padding-bottom: 5vh;
+        }
+        
+        #first{
+            margin-left: 0;
+        }
+        
+        #social{
+            margin-bottom: 0;
+        }
+        
+        ul.nav a { 
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 200;
+            color: aliceblue!important; 
+        }
+	
+		ul.nav a:hover { 
+            color: coral !important; 
+        }
+        
+        ul.nav ul a { 
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 200;
+            color: black!important; 
+        }
+    </style>
 
   </head>
   
   <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header" >
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#" style="padding-top:10px;">  <img alt="R-Factor" height="40" src="img/logo.png">
-      </a>
-    </div>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="padding-top:10px;">  <img alt="R-Factor" height="40" src="img/logo.png"></a>
+        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" height="40">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Children For Change</a></li>
-            <li><a href="#">Equal Streets</a></li>
-            <li><a href="#">Maker's Mela</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Sponsorships</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#"><span class="glyphicon glyphicon-user"> Members </a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-time"> History </a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-picture"> Gallery </a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact Us</a></li>
-        
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" height="40">
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a class="link" href="#">home</a></li>
+                
+                <li class="dropdown">
+                    <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">events<span class="caret"></span></a>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Children For Change</a></li>
+                        <li><a href="#">Equal Streets</a></li>
+                        <li><a href="#">Maker's Mela</a></li>
+                    </ul> </li>
+
+                <li><a class="link" href="sponsor.html">sponsorships</a></li>
+
+                <li class="dropdown">
+                    <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">about us<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"> Members </span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-time"> History </span></a></li>    
+                        <li><a href="#"><span class="glyphicon glyphicon-certificate"> Awards </span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-picture"> Gallery </span></a></li>
+                    </ul>
+                </li>
+
+                <li><a class="link" href="contact.html">contact us</a></li>
+                
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
-    
-    
     
 <body>
     
-    
-    <div class="jumbotron">
-        <center><div class="container">
-            <h1>Sponsorships</h1>
-            
+    <div id="hello" class="jumbotron">
+        <div style="text-align:center;" class="container">
+            <p style="height:10vh;"></p>
+            <h1>sponsorship</h1>
             <p>Help us out by funding us.</p>
-            
-            <a href="https://www.ketto.org/fundraiser/frc2017-6024">
-                <button class="btn btn-warning" type="button">
-                    <h4> Donate </h4>
-                </button>
-            </a>
-            <a href="contact.html">
-                <button class="btn btn-default" type="button">
-                    <h4>Sponsor</h4>
-                </button>
-            </a>
-        </div></center>
+        </div>
     </div>
-
-    <h1><center>Our Current Sponsors</center></h1><br>
-    <div class="container">
-         <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="img/cfc_thumb.jpg" alt="Children For Change">
-                </a>
-                <div class="caption">
-                    <h3><center>Children For Change</center></h3>
+    
+    <div class="jumbotron" id="why">
+        <div style="text-align:center;" class="container">
+            <h1 style="font-size:48">Why sponsor us?</h1>
+            <p style="min-height:30vh;">We are seeking financial aid from individuals and companies who believe that engagement in STEM activities such as robotics, science, math competitions, and hands-on experiences will encourage a deeper understanding in students. Without our generous sponsors, we would not have the opportunity to get the most out of this wonderful program. The funds and other assistance provided by people like you help our team purchase the tools and parts we need to build our robots, enter competitions, and, of course, order pizza during build season.</p>
+        </div>
+    </div>
+    
+    <div class="jumbotron" id="sponsors">
+        <div style="text-align:center;" class="container">
+            <h1>We love our sponsors!</h1>
+            
+            <br>
+            
+            <div class="row" style="text-align: center;">
+                
+                <div class="col-xs-12">
+                    <div class="jumbotron" id="infosys">
+                        <img src="img/infosys.png" height="200px;">
+                        <h2>Infosys Science Foundation</h2>
+                        <p>Infosys is a global leader in technology services and consulting. They enable clients in more than 50 countries to create and execute strategies for their digital transformation. From engineering to application development, knowledge management and business process management, Infosys helps their clients find the right problems to solve, and to solve these effectively. Our team of 199,000+ innovators, across the globe, is differentiated by the imagination, knowledge and experience, across industries and technologies, that they bring to every project they undertake.</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
+                    
+                    <div class="jumbotron" id="gionee">
+                        <img src="img/gionee.jpg" height="200px;">
+                        <h2>Gionee</h2>
+                        <p>...</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                    <img src="img/makers_mela.jpg" alt="Maker's Mela">
-                </a>
-                <div class="caption">
-                    <h3><center>Maker's Mela</center></h3>
+                
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.infosys.com" class="thumbnail">
+                        <img src="img/infosys.png" style="height:250px;" alt="...">
+                    </a>
                 </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="img/es_thumb.jpg" alt="Equal Streets">
-                </a>
-                <div class="caption">
-                    <h3><center>Equal Streets</center></h3>
+            
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.gionee.com" class="thumbnail">
+                      <img src="img/gionee.jpg" style="height:250px;" alt="...">
+                    </a>
                 </div>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="img/es_thumb.jpg" alt="Equal Streets">
-                </a>
-                <div class="caption">
-                    <h3><center>Another Event</center></h3>
+                
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.omkar.com" class="thumbnail">
+                        <img src="img/omkar.jpg" style="height:250px;" alt="...">
+                    </a>
                 </div>
+            
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.britannia.co.in" class="thumbnail">
+                      <img src="img/britannia.jpeg" style="height:250px;" alt="...">
+                    </a>
+                </div>
+                
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.infosys.com" class="thumbnail">
+                        <img src="img/infosys.png" style="height:250px;" alt="...">
+                    </a>
+                </div>
+            
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.gionee.com" class="thumbnail">
+                      <img src="img/gionee.jpg" style="height:250px;" alt="...">
+                    </a>
+                </div>
+                
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.omkar.com" class="thumbnail">
+                        <img src="img/omkar.jpg" style="height:250px;" alt="...">
+                    </a>
+                </div>
+            
+                <div class="col-xs-6 col-md-3">
+                    <a href="http://www.britannia.co.in" class="thumbnail">
+                      <img src="img/britannia.jpeg" style="height:250px;" alt="...">
+                    </a>
+                </div>
+            
             </div>
-             
+            
         </div>
     </div>
 
+</body>
     
-
-    
+    <script>
+        $("#more").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#more").offset().top
+    }, 1500);
+})    
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script src="https://use.fontawesome.com/764d28d80c.js"></script>
+ 
+<footer>
+    <div id="footer" class="jumbotron">
+        
+        <div style="text-align:center;" id="social" class="container">
+            
+            <a href="https://www.facebook.com/teamrfactor/">
+                <img src="img/ic_facebook.png" height="50px">
+            </a>
+
+            <a href="https://twitter.com/RFactorIndia">
+                <img src="img/ic_twitter.png" style="margin-left:20px" height="50px">
+            </a>
+
+            <a href="https://www.instagram.com/teamrfactorindia/">
+                <img src="img/ic_instagram.png" style="margin-left:20px" height="50px">
+            </a>
+        </div><br>
+        
+        <div style="text-align:center;" class="container center-block">
+            <a href="http://www.firstinspires.org">
+                <img src="img/first_logo.png" id="first" height="50px">
+            </a>
+        </div><br>
+        
+        <div class="container">
+            <center><p id="copy" style="font-size:14px"><span class="glyphicon glyphicon-copyright-mark"></span> 2017 Team R-Factor</p></center>
+        </div>
+    </div>
+</footer>    
+    
 </html>
