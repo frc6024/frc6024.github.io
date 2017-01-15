@@ -53,15 +53,8 @@
         #learn{
             margin-right: 10%;
         }
-        .link{
-        	font-family: 'Nunito Sans', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            color:orange;
-        	}
-        a.link:hover{
-        	color:coral;
-        }
+
+        
         .jumbotron{
             background-color: rgba(18, 18, 18, 0.8);
             font-family: 'Raleway', sans-serif;
@@ -84,11 +77,17 @@
     	min-height: 100%;
     	min-width: 100%;
     }
-    footer{
-    	position: absolute;
-    	background-position: bottom 20vh;
-    	height: 20vh;
-    }
+     
+        .link{
+        	font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color:orange;
+        	}
+        ul.nav a { color: orange !important; }
+	
+		ul.nav a:hover { color: coral !important; }
+
     </style>
 
   </head>
@@ -156,31 +155,36 @@
     
     <div class="jumbotron">
         <div style="text-align:center;" class="container">
-            <p style="height:30vh;">We are a team of 23 young enthusiastic robotics students from Mumbai, India. Many of us have been working with LEGO® robots, World Robot Olympiads, and the FIRST® programs since 2009. We’ve represented the country at several international events, tallying a total of 43 international selections amongst us. Our participation in national and international competitions has helped us grow into innovators and leaders. It has imparted to us important virtues like patience and compassion, and has developed and enriched us as individuals and as a team, making us efficient planners and organizers. Team R-Factor was described at the FLL®2013 as the “only team not just about Robotics”, a title we take great pride in.</p>
+            <p style="min-height:30vh;">We are a team of 23 young enthusiastic robotics students from Mumbai, India. Many of us have been working with LEGO® robots, World Robot Olympiads, and the FIRST® programs since 2009. We’ve represented the country at several international events, tallying a total of 43 international selections amongst us. Our participation in national and international competitions has helped us grow into innovators and leaders. It has imparted to us important virtues like patience and compassion, and has developed and enriched us as individuals and as a team, making us efficient planners and organizers. Team R-Factor was described at the FLL®2013 as the “only team not just about Robotics”, a title we take great pride in.</p>
         </div>
     </div>
 <footer>
     <nav class="navbar navbar-inverse">
         <div class="container">
+            <div style="width:100%;text-align: center;">
             <a href="https://facebook.com">
-                <img src="img/ic_facebook.png" height="50px" class="navbar-center">
+                <img src="img/ic_facebook.png" height="50px">
             </a>
             
             <a href="https://twitter.com/RFactorIndia">
-                <img src="img/ic_twitter.png" height="50px" class="navbar-right">
+                <img src="img/ic_twitter.png" height="50px">
             </a>
             
             <a href="https://www.instagram.com/teamrfactorindia/">
-                <img src="img/ic_instagram.png" height="50px" class="navbar-right">
+                <img src="img/ic_instagram.png" height="50px">
             </a>
+            </div>
+
             
-            <a href="http://www.firstinspires.org">
-                <button type="button" id="learn" class="btn btn-warning navbar-btn">
-                        Learn More
-                </button>
+
+            <div class="navbar-text" style="width:100%;text-align:center;">
+            &copy; 2017 Team R-Factor
+            </div>
+            <div style="width:100%;text-align: center;">
+            <a href="http://www.firstinspires.org" style="color: orange;">
+              Learn More
             </a>
-            
-            <p class="navbar-text">&copy; 2017 Team R-Factor</p>
+            </div>
             
         </div>
     </nav>
