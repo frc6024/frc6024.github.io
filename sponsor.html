@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,16 +21,6 @@
         @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
         
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
-        
-        #jumbo{
-            height:100vh;
-            margin-bottom: 0;
-            color:orange;
-            font-family: 'Nunito Sans', sans-serif;
-            z-index: 1;
-            width: 100vw;
-            overflow:hidden;
-        }
         
         .navbar-brand, .navbar-nav li a{
             line-height: 60px;
@@ -62,18 +50,28 @@
         }
         
         #hello{
-            height:50vh;
+            margin-top: 60px;
+            vertical-align: middle;
+            display: inline-block;
+            max-height:50vh;
             margin-bottom: 0;
             color:aliceblue;
             font-family: 'Nunito Sans', sans-serif;
             z-index: 1;
             width: 100vw;
-            overflow:hidden;
+            overflow:auto;
             background-color: rgba(120,120,120,0.8);
         }
         
+        #links{
+            min-height: 10vh;
+            max-width: 100vw;
+            background-color: rgb(80,80,80);
+            margin-bottom: 0;
+        }
+        
         #content{
-        	background-color: rgb(80,80,80);
+        	background-color: rgb(40,40,40);
         }
         
         h1, h2{
@@ -145,6 +143,7 @@
         
         #why{
             margin-bottom: 0;
+            background-color: rgb(40,40,40);
         }
     </style>
 
@@ -168,7 +167,7 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li>
-                    <a class="link" href="#">home</a></li>
+                    <a class="link" href="index.html">home</a></li>
                 
                 <li class="dropdown">
                     <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">events<span class="caret"></span></a>
@@ -202,11 +201,15 @@
     
     <div id="hello" class="jumbotron">
         <div style="text-align:center;" class="container">
-            <p style="height:10vh;"></p>
             <h1>Sponsor us!</h1>
             <p>Help us out by funding us.</p>
-                <a href="https://www.ketto.org/FRC2017-6024"><button type="button" class="btn btn-danger">Donate</button></a>
-                <a href="contact.html"><button type="button" class="btn btn-warning">Sponsor</button></a>
+        </div>
+    </div>
+    
+    <div class="jumbotron" id="links">
+        <div style="text-align:center;" class="container">
+                <a href="https://www.ketto.org/FRC2017-6024"><button type="button" class="btn btn-danger btn-lg">Donate</button></a>
+                <a href="contact.html"><button type="button" class="btn btn-warning  btn-lg">Sponsor</button></a>
         </div>
     </div>
     
