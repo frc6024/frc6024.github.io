@@ -2,45 +2,67 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Team 6024 | R-Factor</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- CSS -->
     <style>
         
-        
+        /* Font Import */
         @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
-        
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-        
         @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
-        
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
         
+        /* CSS Code */
         .navbar-brand, .navbar-nav li a {
             line-height: 10vh;
             height: 10vh;
             padding-top: 0;
-        }  /* navbar items */
+        }       /* navbar items */
+        
+        ul.nav a { 
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 200;
+            color: aliceblue!important; 
+        }                              /* navbar subgroups css */
+	
+		ul.nav a:hover { 
+            color: coral !important; 
+        }                        /* navbar subgroups hover css */
+        
+        ul.nav ul a { 
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 200;
+            color: black!important; 
+        }                           /* navbar submenu css */
         
         .link{
         	font-family: 'Nunito Sans', sans-serif;
             font-weight: bold;
             font-size: 20px;
             color:orange;
-        	}  /* links */  
+        	}                                  /* links */
         
         body{ 
             padding-bottom:0px;
             background-color: rgb(40, 40, 40);
-        }  /* body css */  
+        }                                   /* body css */
+        
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            color: aliceblue;
+        }                                     /* header 1 font */
         
         #hello{
             height:100vh;
@@ -55,12 +77,7 @@
             
             background-color: rgba(51, 51, 51, 0.8);
             color: rgb(240, 251, 255);
-            }  /* welcome jumbotron */  
-        
-        h1{
-            font-family: 'Montserrat', sans-serif;
-            color: aliceblue;
-        }  /* header 1 font */  
+            }                                 /* welcome jumbotron */
         
         #vid{
             position: absolute;
@@ -68,19 +85,19 @@
             height: 100vh;
             z-index: -1;
             overflow: hidden;
-        }  /* video container */  
+        }                                   /* video container */
         
         #bgvid{
             min-height: 100%;
             min-width: 100%;
-        }  /* video */  
+        }                                 /* video */
         
         #intro{
             background-color: rgb(40,40,40);
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
             color: white;
-        }  /* team intro */
+        }                                 /* team intro */
         
         #footer{
             min-height: 10vh;
@@ -89,7 +106,7 @@
             position: absolute;
             padding-bottom: 5vh;
             margin-bottom: 0;
-        }  /* footer css */  
+        }                                /* footer css */
         
         #copy{
             width: inherit;
@@ -98,52 +115,36 @@
             color: gainsboro;
             font-family: Nunito Sans, sans-serif;
             font-weight: 100;
-        }  /* copyright icon css */  
+        }                                  /* copyright icon css */
      
         #sponsors{
             background-color: rgb(30, 30, 30);
             margin-bottom: 0;
             padding-bottom: 5vh;
             color: white;
-        }  /* sponsors jumbotron */  
+        }                              /* sponsors jumbotron */
         
         #first{
             margin-left: 0;
-        }  /* first icon css */  
+        }                                 /* first icon css */
         
         #social{
             margin-bottom: 0;
-        }  /* social media icons css */  
-        
-        ul.nav a { 
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 200;
-            color: aliceblue!important; 
-        }  /* navbar subgroups css */  
-	
-		ul.nav a:hover { 
-            color: coral !important; 
-        }  /* navbar subgroups hover css */  
-        
-        ul.nav ul a { 
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 200;
-            color: black!important; 
-        }  /* navbar items */  
+        }                                /* social media icons css */
         
         #more{
         	position: relative;
-        }  /* navbar items */  
+        }                                  /* scroll down button */
         
         .more:hover{
             color: coral !important;
-        }  /* navbar items */  
+        }                            /* scroll down button hover */
 
     </style>
 
   </head>
   
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header" >
@@ -161,7 +162,8 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li>
-                    <a class="link" href="#">home</a></li>
+                    <a class="link" href="#">home</a>
+                </li>
                 
                 <li class="dropdown">
                     <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">events<span class="caret"></span></a>
@@ -172,7 +174,9 @@
                         <li><a href="#">Maker's Mela</a></li>
                     </ul> </li>
 
-                <li><a class="link" href="sponsor.html">sponsorships</a></li>
+                <li>
+                    <a class="link" href="sponsor.html">sponsorships</a>
+                </li>
 
                 <li class="dropdown">
                     <a class="link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">about us<span class="caret"></span></a>
@@ -184,14 +188,16 @@
                     </ul>
                 </li>
 
-                <li><a class="link" href="contact.html">contact us</a></li>
+                <li>
+                    <a class="link" href="contact.html">contact us</a>
+                </li>
                 
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
     
-<body>
+    <body>
     
     <div id="vid">
         <video id="bgvid" src="https://s3.ap-south-1.amazonaws.com/frc6024/video.mp4" autoplay muted loop></video>
@@ -256,12 +262,12 @@
 
 </body>
     
-    <script>
-        $("#more").click(function(){
-    $('html, body').animate({
-        scrollTop: $("#intro").offset().top-20
-    }, 1100);
-})    
+    <script> 
+        $("#more").click(function(){ 
+            $('html, body').animate({
+                scrollTop: $("#intro").offset().top-20
+            }, 1100);
+        })    
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -295,6 +301,6 @@
             <center><p id="copy" style="font-size:14px"><span class="glyphicon glyphicon-copyright-mark"></span> 2017 Team R-Factor</p></center>
         </div>
     </div>
-</footer>    
+</footer>
     
 </html>
