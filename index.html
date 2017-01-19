@@ -25,61 +25,62 @@
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
         
         .navbar-brand, .navbar-nav li a {
-            line-height: 60px;
-            height: 60px;
+            line-height: 10vh;
+            height: 10vh;
             padding-top: 0;
-        }
-
+        }  /* navbar items */
+        
+        .link{
+        	font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color:orange;
+        	}  /* links */  
+        
         body{ 
             padding-bottom:0px;
             background-color: rgb(40, 40, 40);
-        }
-
-        .navbar{
-            margin-bottom: 0;
-        }
-        
-        .jumbotron{
-            background-color: rgb(40, 40, 40);
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            color: white;
-
-            
-        }
+        }  /* body css */  
         
         #hello{
             height:100vh;
-            margin-bottom: 0;
-            color:#f0fbff;
-            font-family: 'Nunito Sans', sans-serif;
-            z-index: 1;
             width: 100vw;
-            overflow:scroll;
+            
+            font-family: 'Nunito Sans', sans-serif;
+            
+            z-index: 1;
+            padding-top: 10vh;
+            margin-bottom: 0;
+            overflow: scroll;
+            
             background-color: rgba(51, 51, 51, 0.8);
-            }
-        
-        #content{
-        	background-color: rgb(40,40,40);
-        }
+            color: rgb(240, 251, 255);
+            }  /* welcome jumbotron */  
         
         h1{
             font-family: 'Montserrat', sans-serif;
             color: aliceblue;
-        }
+        }  /* header 1 font */  
         
-        #cont{
+        #vid{
             position: absolute;
             width: 100vw;
             height: 100vh;
             z-index: -1;
             overflow: hidden;
-        }
+        }  /* video container */  
         
         #bgvid{
             min-height: 100%;
             min-width: 100%;
-        }
+        }  /* video */  
+        
+        #intro{
+            background-color: rgb(40,40,40);
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            color: white;
+        }  /* team intro */
         
         #footer{
             min-height: 10vh;
@@ -88,7 +89,7 @@
             position: absolute;
             padding-bottom: 5vh;
             margin-bottom: 0;
-        }
+        }  /* footer css */  
         
         #copy{
             width: inherit;
@@ -97,52 +98,46 @@
             color: gainsboro;
             font-family: Nunito Sans, sans-serif;
             font-weight: 100;
-        }
+        }  /* copyright icon css */  
      
-        .link{
-        	font-family: 'Nunito Sans', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            color:orange;
-        	}
-        
         #sponsors{
             background-color: rgb(30, 30, 30);
             margin-bottom: 0;
             padding-bottom: 5vh;
-        }
+            color: white;
+        }  /* sponsors jumbotron */  
         
         #first{
             margin-left: 0;
-        }
+        }  /* first icon css */  
         
         #social{
             margin-bottom: 0;
-        }
+        }  /* social media icons css */  
         
         ul.nav a { 
             font-family: 'Quicksand', sans-serif;
             font-weight: 200;
             color: aliceblue!important; 
-        }
+        }  /* navbar subgroups css */  
 	
 		ul.nav a:hover { 
             color: coral !important; 
-        }
+        }  /* navbar subgroups hover css */  
         
         ul.nav ul a { 
             font-family: 'Quicksand', sans-serif;
             font-weight: 200;
             color: black!important; 
-        }
-
+        }  /* navbar items */  
         
         #more{
         	position: relative;
-        }
+        }  /* navbar items */  
+        
         .more:hover{
             color: coral !important;
-        }
+        }  /* navbar items */  
 
     </style>
 
@@ -198,13 +193,13 @@
     
 <body>
     
-    <div id="cont">
+    <div id="vid">
         <video id="bgvid" src="https://s3.ap-south-1.amazonaws.com/frc6024/video.mp4" autoplay muted loop></video>
     </div>
     
     <div id="hello" class="jumbotron">
         <div style="text-align:center;" class="container">
-            <p style="height:30vh;"></p>
+            <p style="height:25vh;"></p>
             <h1 id="welcome">hello.</h1>
             <p id="6024">We are team 6024</p>
             <span id="more" class="more glyphicon glyphicon-triangle-bottom" style="font-size: 64px; margin-top: 33vh;" aria-hidden="true"></span>
