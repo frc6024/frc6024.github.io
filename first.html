@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, maximum-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+		<style>
+
+			@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Raleway:100,300,500|Work+Sans:300');
+
+			body {
+				background-color: rgb(60, 60, 60);
+			}
+
+			h1 {
+				font-family: 'Work Sans', sans-serif;
+			}
+
+			p {
+				font-family: 'Raleway', sans-serif;
+			}
+
+			img {
+				max-width: 250px;
+				max-height: 250px;
+			}
+
+			.jumbotron {
+				background-color: rgb(225, 225, 225);
+				color: rgb(15, 4, 0);
+				transition: all 0.5s ease 0s;
+			}
+
+			.jumbotron:hover {
+				background-color: rgb(235, 235, 235);
+				transition: all 0.5s ease 0s;
+			}
+
+			.card {
+				background-color: white;
+				align-items: center;
+				padding-top: 5vh;
+			}
+
+			#nav {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 300;
+			}
+
+			#nav a:hover {
+				color: rgb(255, 140, 0);
+			}
+
+			#hello{
+	            min-height:50%;
+	            width: 100vw;
+
+				padding-top: 7%;
+				padding-bottom: 5%;
+
+				text-align: center;
+
+	            z-index: 2;
+	            margin-bottom: 0;
+	            overflow: hidden;
+
+	            background-color: rgba(50, 50, 50, 0.8);
+	            color: rgb(240, 251, 255);
+	        }	/* welcome jumbotron */
+
+			#more {
+				margin-top: 12vw;
+			}
+
+			#more:hover {
+				color: rgb(255, 140, 0);
+				transition: all 0.5s ease 0s;
+			}
+
+			#intro {
+				padding: 5em;
+				text-align: center;
+				margin-bottom: 5vh;
+				margin-top: 5vh;
+				margin-right: 5vw;
+				margin-left: 5vw;
+			}
+
+			#about {
+				text-align: center;
+				margin-bottom: 5vh;
+				margin-top: 5vh;
+				margin-right: 5vw;
+				margin-left: 5vw;
+			}
+
+			#footer {
+				margin: 0;
+				background-color: rgb(20, 20, 20);
+				padding: 5vh;
+				color: rgb(240, 251, 255);
+				font-weight: 100;
+			}
+
+		</style>
+	</head>
+
+	<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" id="nav">
+      	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+      	</button>
+
+		<a class="navbar-brand">
+		    <img src="img/logo.png">
+		</a>
+
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+        	<ul class="navbar-nav ml-auto">
+          		<li class="nav-item">
+            		<a class="nav-link" href="index.html">Home</a>
+          		</li>
+				<li class="nav-item active">
+            		<a class="nav-link" href="first.html">FIRST</a>
+          		</li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Events
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				        <a class="dropdown-item" href="cfc.html">Children For Change</a>
+				        <a class="dropdown-item" href="msm.html">Maker's Mela</a>
+				        <a class="dropdown-item" href="es.html">Equal Streets</a>
+				        <a class="dropdown-item" href="iittf.html">IIT TechFest</a>
+						<a class="dropdown-item" href="wistem.html">WISTEM</a>
+				        <a class="dropdown-item" href="stir.html">STIR</a>
+			        </div>
+			    </li>
+          		<li class="nav-item">
+            		<a class="nav-link" href="sponsor.html">Sponsor Us</a>
+          		</li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          About Us
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="team.html"><i class="fa fa-user fa-fw" aria-hidden="true"></i> The Team</a>
+			          <a class="dropdown-item" href="awards.html"><i class="fa fa-trophy fa-fw" aria-hidden="true"></i> Awards</a>
+					  <a class="dropdown-item" href="gallery.html"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i> Gallery</a>
+					  <a class="dropdown-item" href="ctw.html"><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i> Our Workplace</a>
+			        </div>
+			    </li>
+				<li class="nav-item">
+            		<a class="nav-link" href="contact.html">Contact</a>
+          		</li>
+        	</ul>
+      	</div>
+    </nav>
+
+	<body>
+		<div id="hello" class="jumbotron">
+	        <div style="text-align:center;" class="container">
+	            <h1 class="display-2" id="welcome">first</h1>
+	            <p class="lead" id="6024">For Inspiration and Recognition of Science and Technology</p>
+				<hr class="my-4">
+				<a href="http://firstinspires.org"><button type="button" class="btn btn-outline-warning">
+						Learn More
+				</button></a>
+	        </div>
+	    </div>
+
+		<div class="jumbotron" id="intro">
+	            <h1 class="display-3">What does FIRST do?</h1>
+				<hr class="my-4">
+	            <p class="lead" style="min-height:30vh;">The mission of FIRST is to inspire young people to be science and technology leaders, by engaging them in exciting Mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.
+					<br><br>
+				FIRST (For Inspiration and Recognition of Science and Technology) was founded in 1989 to inspire young people's interest and participation in science and technology. Based in Manchester, NH, the 501(c)(3) not-for-profit public charity designs accessible, innovative programs that motivate young people to pursue education and career opportunities in science, technology, engineering, and math, while building self-confidence, knowledge, and life skills. FIRST is More Than Robots. FIRST participation is proven to encourage students to pursue education and careers in STEM-related fields, inspire them to become leaders and innovators, and enhance their 21 st century work-life skills.
+				</p>
+	    </div>
+
+		<div class="jumbotron" id="about">
+	        <h1 class="display-3">Competitions</h1>
+			<hr class="my-4">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="card card-outline-success">
+						<img class="card-img-top" src="img/jrfll.png" alt="Card image cap">
+				      	<div class="card-block">
+					        <h3 class="card-title">Junior FIRST LEGO League</h3>
+					        <p class="card-text">Captures young curiosity by exploring real-world scientific challenges, learning teamwork, and working with motorized LEGO® elements</p>
+					        <a href="#" class="btn btn-outline-success">Grades K-4</a>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="card card-outline-danger">
+						<img class="card-img-top" src="img/fll.jpeg" alt="Card image cap">
+				      	<div class="card-block">
+					        <h3 class="card-title">FIRST LEGO League</h3>
+					        <p class="card-text">Elementary and middle school-aged students research a real-world engineering challenge, develop a solution, and compete with LEGO-based robots of their own design</p>
+					        <a href="#" class="btn btn-outline-danger">Grades 4-8</a>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="card card-outline-warning">
+						<img class="card-img-top" src="img/ftc.png" alt="Card image cap">
+				      	<div class="card-block">
+					        <h3 class="card-title">FIRST Tech Challenge</h3>
+					        <p class="card-text">Teams of middle and high school-aged students are challenged to design, build, and program a robot to play a floor game against other teams’ creations</p>
+					        <a href="#" class="btn btn-outline-warning">Grades 7-12</a>
+					    </div>
+				    </div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="card card-outline-info">
+						<img class="card-img-top" src="img/frc.png" alt="Card image cap">
+				      	<div class="card-block">
+					        <h3 class="card-title">FIRST Robotics Competition</h3>
+					        <p class="card-text">High school-aged teams compete head to head on a special playing field with robots they have designed, built, and programmed </p>
+					        <a href="#" class="btn btn-outline-info">Grades 9-12</a>
+					    </div>
+				    </div>
+				</div>
+			</div>
+	    </div>
+
+		<div class="jumbotron" id="intro">
+	            <h1 class="display-3">FIRST Robotics Competition</h1>
+				<hr class="my-4">
+	            <p class="lead" style="min-height:30vh;">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.” Under strict rules, limited resources, and an intense six-week time limit, teams of students are challenged to raise funds, design a team "brand," hone teamwork skills, and build and program industrial-size robots to play a difficult field game against like-minded competitors. It’s as close to real-world engineering as a student can get. Volunteer professional mentors lend their time and talents to guide each team. Each season ends with an exciting FIRST Championship.</p>
+				<hr class="my-4">
+				<h1 class="display-5">2017 Game and Season | FIRST Steamworks</h1>
+				<br>
+		        <a href="http://firstinspires.org/robotics/frc/game-and-season" class="btn btn-outline-warning">Learn More</a>
+	    </div>
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/764d28d80c.js"></script>
+		<script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			})
+		</script>
+	</body>
+
+	<footer>
+	    <div id="footer" class="jumbotron">
+	        <div style="text-align:center;" id="social" class="container">
+	            <a href="https://www.facebook.com/teamrfactor/">
+	                <img src="img/ic_facebook.png" height="50px">
+	            </a>
+	            <a href="https://twitter.com/RFactorIndia">
+	                <img src="img/ic_twitter.png" style="margin-left:20px" height="50px">
+	            </a>
+	            <a href="https://www.instagram.com/teamrfactorindia/">
+	                <img src="img/ic_instagram.png" style="margin-left:20px" height="50px">
+	            </a>
+	        </div><br>
+	        <div style="text-align:center;" class="container center-block">
+	            <a href="http://www.firstinspires.org">
+	                <img src="img/first_logo.png" id="first" height="50px">
+	            </a>
+	        </div><br>
+	        <div class="container">
+	            <center><p id="copy" style="font-size:14px"><span class="glyphicon glyphicon-copyright-mark"></span> 2017 Team R-Factor</p></center>
+	        </div>
+	    </div>
+	</footer>
+</html>
